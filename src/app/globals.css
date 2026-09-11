@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* Design tokens from the Revised GARBO Figma file */
+@theme {
+  --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #701026;
+  --color-primary-ink: #4d0014;
+  --color-primary-tint: #f97a8a;
+  --color-primary-soft: #ffb2b9;
+
+  --color-accent: #775a00;
+  --color-accent-deep: #735700;
+  --color-accent-ink: #251a00;
+  --color-gold: #fece57;
+  --color-gold-soft: #ffdf98;
+
+  --color-success: #004122;
+  --color-success-deep: #002913;
+  --color-success-ink: #00522d;
+  --color-success-soft: #a4f4bc;
+  --color-mint: #89d7a2;
+  --color-leaf: #63b17e;
+
+  --color-ink: #181d1a;
+  --color-ink-muted: #564243;
+  --color-ink-subtle: #897173;
+  --color-divider: #dcc0c1;
+
+  --color-canvas: #f6fbf5;
+  --color-surface-muted: #f0f5f0;
+  --color-surface-sunken: #ebefea;
+  --color-surface-strong: #e5e9e4;
+  --color-track: #dfe4df;
+
+  --color-danger: #ba1a1a;
+  --color-toast: #2c322e;
+}
+
+/* Typography helpers matching the Figma text styles */
+@utility text-label {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.55px;
+}
+
+@utility text-caption {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+}
+
+@utility shadow-card {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+@utility shadow-raised {
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+}
