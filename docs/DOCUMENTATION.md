@@ -69,10 +69,11 @@
 **Branch flow (suggested):** `feature branches → development → (testing) → main`.
 
 ### Contributors
-| Name | GitHub | Role |
-|------|--------|------|
-| Charity Ricabo | — | Project owner, concept & design *(role to confirm)* |
-| helidastar | [@helidastar](https://github.com/helidastar) | Repository owner, developer *(role to confirm)* |
+| Name | GitHub |
+|------|--------|
+| Charity Ricabo | [@helidastar](https://github.com/helidastar) |
+| Cyndrick Abejo | [@Cyn-sharp](https://github.com/Cyn-sharp) |
+| John Vincent Fabroa | [@Beynsz](https://github.com/Beynsz) |
 
 ### Commit history (to date)
 | Date | Author | Commit |

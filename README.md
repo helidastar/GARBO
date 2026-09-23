@@ -84,8 +84,9 @@ Changes flow from feature branches into `development`, then into `main` through 
 
 | Name | GitHub |
 |------|--------|
-| Charity Ricabo | — |
-| helidastar | [@helidastar](https://github.com/helidastar) |
+| Charity Ricabo | [@helidastar](https://github.com/helidastar) |
+| Cyndrick Abejo | [@Cyn-sharp](https://github.com/Cyn-sharp) |
+| John Vincent Fabroa | [@Beynsz](https://github.com/Beynsz) |
 
 ## License
 
