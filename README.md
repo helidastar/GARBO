@@ -121,6 +121,7 @@ Changes flow from feature branches into `development`, then into `main` through 
 | Charity Ricabo | [@helidastar](https://github.com/helidastar) |
 | Cyndrick Abejo | [@Cyn-sharp](https://github.com/Cyn-sharp) |
 | John Vincent Fabroa | [@Beynsz](https://github.com/Beynsz) |
+| Shaun Andrew Lastimosa | [@Salem-512](https://github.com/Salem-512) |
 
 ## License
 
