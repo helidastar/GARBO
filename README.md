@@ -6,7 +6,7 @@
 
 A mobile-first web application that helps university students dispose of and segregate waste properly, and rewards them for it.
 
-![Status](https://img.shields.io/badge/status-blueprint-lightgrey)
+![Status](https://img.shields.io/badge/status-in_development-yellow)
 ![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?logo=supabase&logoColor=white)
@@ -46,7 +46,7 @@ Student encounters waste  →  GARBO identifies it  →  Student finds the corre
 
 | Layer | Technology |
 |-------|------------|
-| Frontend | Next.js (React), Tailwind CSS |
+| Frontend | Next.js 16 (React 19, TypeScript), Tailwind CSS 4 |
 | Backend | Next.js Route Handlers (Node.js) |
 | Database and Auth | Supabase (PostgreSQL, Auth, Storage, Realtime) |
 | Waste Classification | AI Vision API |
@@ -55,7 +55,41 @@ Student encounters waste  →  GARBO identifies it  →  Student finds the corre
 
 ## Project Status
 
-The project is in the **blueprint stage**. The student app screens are designed in Figma, and the system architecture, data model, and API are documented. Implementation begins on the `frontend` branch.
+The project is in **active frontend development**.
+
+- **Student app UI** — The Figma design has been imported into Next.js. The Home, Scan, Map, Missions, and Profile screens are built with a shared header and bottom navigation, using mock data for now.
+- **Landing page** — A marketing site in the `garbo/` folder introduces GARBO with interactive demos (waste sorter, points calculator, campus preview, and Green Cup leaderboard).
+- **Next up** — Supabase integration (auth, database, storage), the AI waste scanner, and QR disposal verification.
+
+## Getting Started
+
+**Requirements:** Node.js 20 or later and npm.
+
+```bash
+# Student app (repository root)
+npm install
+npm run dev
+
+# Landing page
+cd garbo
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser. If both apps run at the same time, the second one will use the next free port (for example, 3001).
+
+## Project Structure
+
+```
+GARBO/
+├── src/
+│   ├── app/(app)/      # Student app screens: home, scan, map, missions, profile
+│   ├── components/     # Shared UI: AppHeader, BottomNav, Icon, ProgressBar
+│   └── lib/            # Mock data
+├── public/icons/       # SVG icons exported from Figma
+├── garbo/              # Marketing landing page (separate Next.js app)
+└── docs/               # Project documentation
+```
 
 ## Documentation
 
@@ -76,7 +110,7 @@ The complete project documentation is in **[docs/DOCUMENTATION.md](docs/DOCUMENT
 |--------|---------|
 | `main` | Stable, reviewed work. Production deploys from this branch. |
 | `development` | Integration branch for ongoing work. |
-| `frontend` | Implementation of the user interface (planned). |
+| `frontend` | Implementation of the user interface (in progress). |
 
 Changes flow from feature branches into `development`, then into `main` through pull requests.
 
