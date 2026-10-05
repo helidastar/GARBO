@@ -5,7 +5,7 @@ import { StreakTracker, type StreakDay } from "@/components/garbo/StreakTracker"
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Chip } from "@/components/ui/Chip";
-import { ProgressBar } from "@/components/ui/ProgressBar";
+import { ProgressBar } from "@/components/ProgressBar";
 import { POINTS } from "@/lib/constants";
 import { PanelTitle } from "./PanelTitle";
 
@@ -50,7 +50,13 @@ export function WeekDemo() {
           </Chip>
         )}
       </div>
-      <ProgressBar value={items} max={MISSION_GOAL} label="Mission progress" />
+      <ProgressBar
+        value={items / MISSION_GOAL}
+        label="Mission progress"
+        className="mt-3 h-2.5"
+        trackClassName="bg-muted"
+        barClassName="bg-brand"
+      />
       <p aria-live="polite" className="mt-1.5 text-sm text-soft">
         {complete ? "Mission complete" : `${items} of ${MISSION_GOAL} done`}
       </p>

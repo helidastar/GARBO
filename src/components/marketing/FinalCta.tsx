@@ -29,14 +29,14 @@ export function FinalCta() {
 
               <div className="mt-7 flex flex-wrap justify-center gap-3">
                 <Button
-                  href={ROUTES.register ?? "/register"}
+                  href={ROUTES.register}
                   size="lg"
                   className="flex items-center gap-2 rounded-xl bg-saffron px-7 py-3 text-sm font-black text-[#590c19] shadow-lg shadow-saffron/30 transition-all duration-200 hover:bg-[#ffbe4d] hover:shadow-xl active:scale-95"
                 >
                   <IconSmartphone size={16} /> Sign Up with Student ID
                 </Button>
                 <Button
-                  href={ROUTES.login ?? "/login"}
+                  href={ROUTES.login}
                   variant="outline"
                   size="lg"
                   className="rounded-xl border-white/30 bg-white/10 px-7 py-3 text-sm font-bold text-white transition-all duration-200 hover:bg-white/20 hover:border-white active:scale-95"

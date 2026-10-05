@@ -90,13 +90,13 @@ export function SiteHeader() {
         {/* Action Buttons */}
         <div className="flex items-center gap-2">
           <Link
-            href={ROUTES.login ?? "/login"}
+            href={ROUTES.login}
             className="rounded-xl px-3.5 py-2 text-sm font-bold text-garnet transition-all duration-200 hover:bg-garnet/10 hover:shadow-inner active:scale-95"
           >
             Log In
           </Link>
           <Button
-            href={ROUTES.register ?? "/register"}
+            href={ROUTES.register}
             size="sm"
             className="rounded-xl bg-garnet px-4 py-2 text-xs font-bold text-white shadow-md shadow-garnet/30 transition-all duration-200 hover:bg-[#7e1f1f] hover:shadow-lg hover:shadow-garnet/40 active:scale-95 sm:text-sm"
           >

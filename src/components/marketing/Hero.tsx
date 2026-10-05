@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { TiltCard } from "@/components/ui/TiltCard";
@@ -51,7 +50,7 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center justify-center lg:justify-start">
             <Button
-              href={ROUTES.register ?? "/register"}
+              href={ROUTES.register}
               size="lg"
               className="group relative overflow-hidden rounded-2xl bg-garnet px-7 py-3.5 text-base font-bold text-white shadow-xl shadow-garnet/30 transition-all duration-200 hover:bg-[#7e1f1f] hover:shadow-2xl hover:shadow-garnet/40 active:scale-95"
             >

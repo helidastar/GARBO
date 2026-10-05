@@ -8,16 +8,12 @@ export function useCountUp(target: number, ms = 600) {
   const from = useRef(target);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      from.current = target;
-      setValue(target);
-      return;
-    }
+    const duration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : ms;
     const begin = from.current;
     const start = performance.now();
     let raf = 0;
     const tick = (now: number) => {
-      const t = Math.min(1, (now - start) / ms);
+      const t = duration > 0 ? Math.min(1, (now - start) / duration) : 1;
       const eased = 1 - Math.pow(1 - t, 3);
       const v = Math.round(begin + (target - begin) * eased);
       from.current = v;

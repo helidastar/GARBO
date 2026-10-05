@@ -1,6 +1,8 @@
 type ProgressBarProps = {
   /** 0 to 1 */
   value: number;
+  /** Accessible name, e.g. "Mission progress" */
+  label?: string;
   className?: string;
   trackClassName?: string;
   barClassName?: string;
@@ -8,6 +10,7 @@ type ProgressBarProps = {
 
 export function ProgressBar({
   value,
+  label,
   className = "h-2",
   trackClassName = "bg-track",
   barClassName = "bg-primary",
@@ -16,6 +19,7 @@ export function ProgressBar({
   return (
     <div
       role="progressbar"
+      aria-label={label}
       aria-valuenow={percent}
       aria-valuemin={0}
       aria-valuemax={100}

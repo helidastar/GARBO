@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
-type Variant = "primary" | "ghost" | "light";
+type Variant = "primary" | "ghost" | "light" | "outline";
 type Size = "sm" | "md" | "lg";
 
 type Common = {
@@ -22,6 +22,8 @@ const variants: Record<Variant, string> = {
   primary: "border-brand bg-brand text-on-brand hover:brightness-110",
   ghost: "border-link bg-transparent text-link hover:bg-muted",
   light: "border-on-band bg-on-band text-garnet hover:brightness-95",
+  // Unfilled; the caller sets border, background and text colors to suit a light or maroon section.
+  outline: "",
 };
 
 const sizes: Record<Size, string> = {

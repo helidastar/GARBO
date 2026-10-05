@@ -49,14 +49,14 @@ export function CompeteSection() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Button
-                href={ROUTES.register ?? "/register"}
+                href={ROUTES.register}
                 size="lg"
                 className="rounded-xl bg-saffron px-6 py-3 text-sm font-black text-[#590c19] shadow-lg shadow-saffron/30 transition-all duration-200 hover:bg-[#ffbe4d] hover:shadow-xl active:scale-95"
               >
                 Join Your College Team
               </Button>
               <Button
-                href={ROUTES.login ?? "/login"}
+                href={ROUTES.login}
                 variant="outline"
                 size="lg"
                 className="rounded-xl border-white/30 bg-white/10 px-6 py-3 text-sm font-bold text-white transition-all duration-200 hover:bg-white/20 hover:border-white active:scale-95"

@@ -34,9 +34,9 @@ export function SiteFooter() {
           <div>
             <h4 className="text-xs font-black uppercase tracking-wider text-ink">Student Portal</h4>
             <ul className="mt-2.5 space-y-2 text-xs">
-              <li><Link href={ROUTES.login ?? "/login"} className="transition-colors hover:text-garnet hover:underline">Student Log In</Link></li>
-              <li><Link href={ROUTES.register ?? "/register"} className="transition-colors hover:text-garnet hover:underline">Create Account</Link></li>
-              <li><Link href={ROUTES.contact ?? "/contact"} className="transition-colors hover:text-garnet hover:underline">Report a Full Bin</Link></li>
+              <li><Link href={ROUTES.login} className="transition-colors hover:text-garnet hover:underline">Student Log In</Link></li>
+              <li><Link href={ROUTES.register} className="transition-colors hover:text-garnet hover:underline">Create Account</Link></li>
+              <li><Link href={ROUTES.contact} className="transition-colors hover:text-garnet hover:underline">Report a Full Bin</Link></li>
             </ul>
           </div>
         </div>

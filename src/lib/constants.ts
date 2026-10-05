@@ -7,10 +7,11 @@ export const POINTS = {
 export const POINTS_PER_PRINT_CREDIT = 50; // 1,240 pts is about 24 credits (to confirm)
 
 /**
- * Single place to change where every "Open the app / Sign in" button goes.
- * Swap "#start" for "/login" once the auth route exists.
+ * Single place to change where every "Sign in / Create account" button goes.
+ * Both open the app for now; swap in "/login" and "/register" once auth exists.
  */
 export const ROUTES = {
-  login: "#start",
+  login: "/home",
+  register: "/home",
   contact: "mailto:", // add the team's email address
 } as const;

@@ -40,7 +40,7 @@ export function CampusBand() {
             </p>
             <div className="mt-5">
               <Link
-                href={ROUTES.register ?? "/register"}
+                href={ROUTES.register}
                 className="inline-flex items-center gap-1.5 text-xs font-bold text-garnet transition-all duration-200 hover:text-ember hover:underline active:scale-95"
               >
                 <span>Register now to start scanning</span>
